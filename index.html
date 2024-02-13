@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Automatic Redirect to Artcicle</title>
+  <script>
+    // Define the URL to redirect to
+    var redirectTo = 'https://docs.google.com/document/d/1pfF8natQgN962GKq4PkIZj21E_k6_aTXPb-1Fa1XPLQ/edit?usp=sharing';
+    
+    // Define the delay (in milliseconds) before redirecting
+    var delay = 50; // 5000 milliseconds = 5 seconds
+    
+    // Function to perform the redirection
+    function redirectToURL() {
+      window.location.href = redirectTo;
+    }
+    
+    // Delay the redirection
+    setTimeout(redirectToURL, delay);
+  </script>
+</head>
+<body>
+  <p>This page will automatically redirect to another URL in a few mili seconds...</p>
+</body>
+</html>
